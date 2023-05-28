@@ -1,7 +1,0 @@
--->Points
----->appendChild
-by using this we can add child to the html or add tags or elements to html
------>createElement
-this this the previous command works together
-:CODE:
-document.querySelector(".className").appendChild(document.createElement("tagName")).assign_property= value of the property;
