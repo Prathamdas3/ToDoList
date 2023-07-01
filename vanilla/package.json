@@ -10,6 +10,9 @@
     "start": "vite"
   },
   "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
     "vite": "^4.3.9"
   }
 }
