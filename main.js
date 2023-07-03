@@ -1,6 +1,7 @@
 "use strict";
 const saveTodo = document.querySelector(".submitTodo");
 const cardList = document.querySelector(".cards");
+const deleteBtn = document.querySelector(".deleteBtn");
 
 let counter = 0;
 
@@ -16,8 +17,8 @@ const createCards = (title, description) => {
     <div class="d-flex justify-content-between">
       <button
         type="button"
-        class="bg-success border border-0 rounded text-white p-2"
-        id="deleteBtn${counter}"
+        class="bg-success border border-0 rounded text-white p-2 deleteBtn"
+        
       >
         Completed
       </button>
