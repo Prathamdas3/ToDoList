@@ -17,51 +17,43 @@
       List your Tasks for Today 📃
     </header>
     <section>
-      <div class="container">
-        <button class="border border-0 rounded bg-primary addTodo">+</button>
-      </div>
-      <div class="container mt-3 visually-hidden enterTodo">
-        <form class="d-flex">
-          <div class="">
+      <div id="alertSection"></div>
+      <div class="container mt-3 enterTodo">
+        <form class="">
+          <label for="exampleInputEmail1" class="form-label">Todo Title</label>
+          <div class="mb-2">
             <input
               type="text"
               class="form-control"
-              id="exampleInputEmail1"
+              id="title"
               aria-describedby="emailHelp"
-              placeholder="Enter Your Todo's Here"
+              placeholder="Enter Your Todo Title here"
             />
           </div>
-          <div class="align-self-center px-2">
-            <button type="submit" class="btn btn-primary submitTodo">✓</button>
+          <label for="exampleInputEmail1" class="form-label"
+            >Todo Description</label
+          >
+          <div class="mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="desc"
+              aria-describedby="emailHelp"
+              placeholder="Enter Your Todo Description Here"
+            />
+          </div>
+          <div class="align-self-center px-2 my-2">
+            <button type="submit" class="btn btn-primary submitTodo">
+              Submit
+            </button>
           </div>
         </form>
       </div>
 
-      <div class="container visually-hidden">
-        <div class="card" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <div class="d-flex justify-content-between">
-              <button
-                type="button"
-                class="bg-danger border border-0 rounded text-white p-2"
-              >
-                Delete
-              </button>
-              <button
-                type="button"
-                class="bg-success border border-0 rounded text-white p-2"
-              >
-                Completed
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div
+        class="container mt-3 cards d-flex flex-wrap gap-2"
+        id="todoCards"
+      ></div>
     </section>
     <script type="module" src="/main.js"></script>
     <script
